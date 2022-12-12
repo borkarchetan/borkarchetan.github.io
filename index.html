@@ -1,384 +1,622 @@
 <!DOCTYPE html>
-<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <title>Chetan Borkar || Portfolio</title>
-  <link rel="icon" href="./images/icon.jpg">
-  <link rel="stylesheet" href="style.css" />
-  <!-- Github Calendar link -->
-  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-  <!-- Fontawesome CDN Link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3611060072430460"
+        crossorigin="anonymous"></script>
+    <link rel="icon" href="./assets/img/icon.jpg" type="image/x-icon">
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+    </script>
+    <title> Chetan Borkar </title>
+    <link rel="stylesheet" href="./assets/css/github-calendar-responsive.css" />
+
 </head>
 
 <body>
-  <!-- Move to up button -->
-  <div class="scroll-button">
-    <a href="#home"><i class="fas fa-arrow-up"></i></a>
-  </div>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Chetan Borkar</a>
 
-  <script src="https://kit.fontawesome.com/6f3f4b23f1.js" crossorigin="anonymous"></script>
-  <!-- navgaition menu -->
-  <nav>
-    <div class="navbar">
-      <div class="logo"><a href="#">Chetan Borkar</a></div>
-      <ul class="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#services">Projects</a></li>
-        <li><a href="./images/ChetanBorkar_Resume.pdf" target="_blank">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home-alt'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-book'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+                            <i class='bx bxs-briefcase-alt-2'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-message-detail'></i>
+                        </a>
+                    </li>
 
-        <div class="cancel-btn">
-          <i class="fas fa-times"></i>
-        </div>
-      </ul>
-      <div class="media-icons">
-        <a href="https://www.linkedin.com/in/chetan-borkar-a32b9122b/" target="_blank"><i
-            class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/borkarchetan" target="_blank"><i class="fab fa-github"></i></a>
-      </div>
-    </div>
-    <div class="menu-btn">
-      <i class="fas fa-bars"></i>
-    </div>
-  </nav>
-
-  <!-- Home Section Start -->
-  <div id="first">
-    <section class="home" id="home">
-      <div class="home-content">
-        <div class="text">
-          <div class="text-one">Hey There... 👋🏻,</div>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <h3 class="animate-charcter"> Chetan Borkar</h3>
-              </div>
+                    <!-- <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-message-detail'></i>
+                        </a>
+                    </li> -->
+                </ul>
             </div>
-          </div>
-          <div class="text-three">Java Backend Developer</div>
+
+            <!-- Theme Change Button -->
+            <i class='bx bx-moon change-theme' id="theme-button"></i>
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__greeting">Hello I'm</span>
+                    <h1 class="home__name">Chetan Borkar</h1>
+                    <h3 class="home__education"> JAVA Backend Developer</h3>
+
+                    <div class="home__buttons">
+
+                        <a href="./assets/img/Chetan_Resume.pdf" download target="_blank">
+                            <button class="button button--ghost" onclick="runredirect()">
+                                My Resume
+                            </button>
+                        </a>
+                        <a href="#about" class="button">About me</a>
+                    </div>
+                </div>
+
+                <div class="home__handle">
+                    <img src="./assets/img/coding-image.png" alt="" class="home__img">
+                </div>
+                <div class="home__social">
+                    <!-- telegram -->
+                    <a href="https://t.me/borkarchetan" class="home__social-link" target="_blank">
+                        <i class='bx bxl-telegram'></i>
+                    </a>
+                    <!-- telegram -->
+
+                    <!-- whatsapp -->
+                    <a href="https://wa.me/+918806997836" class="home__social-link" target="_blank">
+                        <i class='bx bxl-whatsapp'></i>
+                    </a>
+                    <!-- whatsapp -->
+
+                    <!-- linkedin -->
+                    <a href="https://www.linkedin.com/in/chetan-borkar-a32b9122b/" class="home__social-link"
+                        target="_blank">
+                        <i class='bx bxl-linkedin-square'></i>
+                    </a>
+                    <!-- linkedin -->
+
+
+                    <!-- instagram -->
+                    <a href="https://www.instagram.com/0_akphotography_0/" class="home__social-link" target="_blank">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+
+                    <!-- instagram -->
+
+                    <!-- github -->
+                    <a href="https://github.com/borkarchetan" class="home__social-link" target="_blank">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <!-- github -->
+
+                </div>
+                 <a href="#about" class="home__scroll">
+                    <i class='bx bx-mouse home__scroll-icon'></i>
+                    <span class="home__scroll-name">Scroll Down</span>
+                </a> 
+            </div>
+        </section>
+
+        <!--=============== ABOUT ===============-->
+        <section class="about section" id="about">
+            <span class="section__subtitle">My Intro</span>
+            <h2 class="section__title">About Me</h2>
+
+            <div class="about__container container grid">
+                <img src="./assets/img/Profile picture.png" alt="" class="about__img">
+
+                <div class="about__data">
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class='bx bx-award about__icon'></i>
+                            <h3 class="about__title">Eduaction</h3>
+                            <span class="about__subtitle">12th Science 2017</span>
+                        </div>
+
+                        <div class="about__box">
+                            <i class='bx bx-briefcase-alt about__icon'></i>
+                            <h3 class="about__title">Completed</h3>
+                            <span class="about__subtitle">4+ Projects</span>
+                        </div>
+
+                        <div class="about__box">
+                            <i class='bx bx-support about__icon'></i>
+                            <h3 class="about__title">Support</h3>
+                            <span class="about__subtitle">Online 24/7</span>
+                        </div>
+                    </div>
+                    <p class="about__description">
+
+                        A passionate programmer with ability to learn quickly and implement and also versatile enough to
+                        learn and work in new
+                        environment. Currently looking for an opportunity to work for an organization where I can
+                        contribute my skills and manage key
+                        Projects that impact the organization, as well as broaden my scope of learning from the
+                        organization's team members.
+                    </p>
+                    <a href="#contact" class="button">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SKILLS ===============-->
+        <section class="skills section" id="skills">
+            <span class="section__subtitle">My abilities</span>
+            <h2 class="section__title">My Skills</h2>
+            <div class="skills__container container grid">
+                <div class="skills__content">
+                    <h3 class="skills__title">Backend Development
+                    </h3>
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">JAVA</h3>
+                                    <img src="./assets/img/java.png" />
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">My SQL</h3>
+                                    <img src="./assets/img/sql.png" />
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">SpringBoot</h3>
+                                    <img src="./assets/img/spring-boot.png" />
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Postman</h3>
+                                    <img src="./assets/img/postman-icon.png" />
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Hibernet</h3>
+                                    <img src="./assets/img/hibernet.png" />
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Maven</h3>
+                                    <img src="./assets/img/maven.jpg" />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__content">
+                    <h3 class="skills__title">Frontend Development</h3>
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">HTML</h3>
+                                    <img src="https://img.icons8.com/color/20/000000/html-5--v1.png" />
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">CSS</h3>
+                                    <img src="https://img.icons8.com/color/20/000000/css3.png" />
+                                </div>
+
+                            </div>
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check'></i>
+                                    <div>
+                                        <h3 class="skills__name">JavaScript</h3>
+                                        <img src="https://img.icons8.com/color/20/000000/javascript--v2.png" />
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__content">
+                    <h3 class="skills__title">Soft Skills
+                    </h3>
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Communication</h3>
+
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Listening</h3>
+
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Leadership</h3>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Creativity</h3>
+
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Problem Solving</h3>
+                                    <!-- <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"/> -->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== Work ===============-->
+        <section class="work section" id="work">
+            <span class="section__subtitle">My Portfolio</span>
+            <h2 class="section__title">Recent Works</h2>
+            <div class="work__filters">
+                <span class="work__item" data-filter=".projects">Projects</span>
+            </div>
+            <div class="work__container container grid">
+                <div class="work__card mix projects">
+                    <img src="./assets/img/Hindustan Times.png" alt="" class="work__img">
+                    <h3 class="work__title">Website - Hindustan Times</h3>
+
+                    <p>Hindustan Times is an Indian </p>
+                    <p>English-language daily newspaper.</p>
+                    <p>It played integral roles in the</p>
+                    <p>Indian independence movement as a</p>
+                    <p>nationalist daily.</p>
+                    <p>A collaborative project, built in 5 days,</p>
+                    <p>by a team of 6 developers.</p>
+
+                    <p class="bold"> TECH STACKS :</p>
+
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.pqcPskVdTrJqfhZ-Z49AtQHaHn&pid=Api&rs=1&c=1&qlt=95&w=106&h=109"
+                        alt="" class="logos" />
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.7Af7fIq_qBZlQKTogILDlgHaG6&pid=Api&P=0" alt=""
+                        class="logos" />
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.vF8_h2mXqrGRynymmcJ4zgHaHJ&pid=Api&P=0" alt=""
+                        class="logos" />
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.vz7_8tUPWjssC87owmj88gHaHa&pid=Api&P=0" alt=""
+                        class="logos" />
+                    <a href="https://hindustan-times.netlify.app/" target="_blank" class="work__button">
+                        Live <i class='bx bx-right-arrow-alt work__icon'></i>
+                        <a href="https://github.com/borkarchetan/Project_Hindustantimes" target="_blank"
+                            class="button code">Code</a>
+                    </a>
+                </div>
+
+                <div class="work__card mix projects">
+                    <img src="./assets/img/shop.com.png" alt="" class="work__img">
+                    <h3 class="work__title">Website - Shop.com</h3>
+
+
+
+                    <p>Shop.comis an E-commerce</p>
+                    <p> platform of goods from </p>
+                    <p> clothing, accessories,</p>
+                    <p>appliances, home-decor, and electronic </p>
+                    <p>gadgets.</p>
+                    <p>A collaborative project, built in 5 days,</p>
+                    <p>by a team of 6 developers.</p>
+
+                    <p class="bold"> TECH STACKS :</p>
+
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.pqcPskVdTrJqfhZ-Z49AtQHaHn&pid=Api&rs=1&c=1&qlt=95&w=106&h=109"
+                        alt="" class="logos" />
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.7Af7fIq_qBZlQKTogILDlgHaG6&pid=Api&P=0" alt=""
+                        class="logos" />
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.vF8_h2mXqrGRynymmcJ4zgHaHJ&pid=Api&P=0" alt=""
+                        class="logos" />
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.vz7_8tUPWjssC87owmj88gHaHa&pid=Api&P=0" alt=""
+                        class="logos" />
+
+                    <a href="https://cloneshop-com.netlify.app/" target="_blank" class="work__button">
+                        Live <i class='bx bx-right-arrow-alt work__icon'></i>
+                        <a href="https://github.com/tamilarasanr27/MasaiGroupProject" target="_blank"
+                            class="button code">Code</a>
+                    </a>
+                </div>
+                <div class="work__card mix projects">
+                    <img src="./assets/img/niftypm.png" alt="" class="work__img">
+                    <h3 class="work__title">Website - niftypm</h3>
+
+                    <p>Niftypm is the remote collaboration</p>
+                    <p>hub to manage projects, tasks, and</p>
+                    <p>communications. -all in one place.</p>
+                    <p>Remote work has never been easier,</p>
+                    <p>fun, and more .</p>
+                    <p>A collaborative project, built in 5 days,</p>
+                    <p>by a team of 6 developers.</p>
+
+                    <p class="bold"> TECH STACKS :</p>
+
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.pqcPskVdTrJqfhZ-Z49AtQHaHn&pid=Api&rs=1&c=1&qlt=95&w=106&h=109"
+                        alt="" class="logos" />
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.7Af7fIq_qBZlQKTogILDlgHaG6&pid=Api&P=0" alt=""
+                        class="logos" />
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.vF8_h2mXqrGRynymmcJ4zgHaHJ&pid=Api&P=0" alt=""
+                        class="logos" />
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.vz7_8tUPWjssC87owmj88gHaHa&pid=Api&P=0" alt=""
+                        class="logos" />
+
+                    <a href="https://bespoke-dragon-42095c.netlify.app/" target="_blank" class="work__button">
+                        Live <i class='bx bx-right-arrow-alt work__icon'></i>
+                        <a href="https://github.com/vinu7461/disillusioned-respect-348/tree/main/disillusioned-respect-3485"
+                            target="_blank" class="button code">Code</a>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <!-- STATICS -->
+        <section>
+            <span class="section__subtitle">My Statistics</span>
+            <h2 class="section__title">Statistics section</h2>
+
+            <div class="statics">
+                <div>
+                    <img src="https://github-readme-stats.vercel.app/api?username=borkarchetan&hide_border=false&include_all_commits=false&count_private=false"
+                        alt="">
+                    <img src="https://github-readme-streak-stats.herokuapp.com/?user=borkarchetan&hide_border=false"
+                        alt="">
+                </div>
+                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=borkarchetan&hide_border=false&include_all_commits=true&count_private=false"
+                    alt="">
+            </div>
+            <div class="work__filters">
+                <span class="work__item" data-filter=".github-calendar">GitHub calendar</span>
+            </div>
+
+            <div class="calendar">
+                <!-- Loading stuff -->
+                Loading the data just for you.
+            </div>
+        </section>
+        <!--=============== CONTACT ===============-->
+        <section class="contact section" id="contact">
+            <span class="section__subtitle">Get in Touch</span>
+            <h2 class="section__title">Contact Me</h2>
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h3 class="contact__title title__contact">Talk to Me</h3>
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class='bx bxl-gmail contact__card-icon'></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">computerbattleship@gmail.com</span>
+                            <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDbSJbxHcVBcMGqNLzhFfWstbpRqpCSJgNzdVpFflNzgwJcwVdkznSWCxsnDSnQMWzKZljs"
+                                target="_blank" class="contact__button">
+                                Email me <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bxl-github contact__card-icon'></i>
+                            <h3 class="contact__card-title">Github</h3>
+                            <span class="contact__card-data">borkarchetan</span>
+                            <a href="https://github.com/borkarchetan" target="_blank" class="contact__button">
+                                Check My Repos <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bxl-linkedin contact__card-icon'></i>
+                            <h3 class="contact__card-title">Linkedin</h3>
+                            <span class="contact__card-data">Chetan Borkar</span>
+                            <a href="https://www.linkedin.com/in/chetan-borkar-a32b9122b/" target="_blank"
+                                class="contact__button">
+                                Send Message <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="contact__content">
+                    <h3 class="contact__title">Write me Anything</h3>
+                    <!-- form start -->
+                    <form action="https://formspree.io/f/mjvzndyy" class="contact__form" id="my-form" method="POST">
+                        <div class="contact__form-div">
+                            <label for="name" class="contact__form-tag">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name here !"
+                                class="contact__form-input" required>
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label for="mail" class="contact__form-tag">Email</label>
+                            <input type="email" id="email" name="mail" placeholder="Enter your Email here !"
+                                class="contact__form-input" required>
+                        </div>
+
+                        <div class="contact__form-div contact__form-area">
+                            <label for="message" class="contact__form-tag">Description</label>
+                            <textarea type="text" id="message" placeholder="Write me Something !" name="message"
+                                cols="30" rows="10" class="contact__form-input" required></textarea>
+                        </div>
+
+                        <button class="button form__button">Submit</button>
+                    </form>
+                    <!-- form end -->
+                </div>
+            </div>
+
+        </section>
+        <!-- Submit status -->
+        <div id="status"></div>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Chetan Borkar</h1>
+            <ul class="footer__list">
+                <li>
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+                <li>
+                    <a href="#work" class="footer__link">Projects</a>
+                </li>
+                <li>
+                    <a href="#testimonial" class="footer__link">Testimonials</a>
+                </li>
+            </ul>
+            <ul class="footer__social">
+
+                <!-- whatsapp -->
+                <a href="https://wa.me/+918806997836" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-whatsapp'></i>
+                </a>
+                <!-- whatsapp -->
+
+
+                <!-- linkedin -->
+                <a href="https://www.linkedin.com/in/chetan-borkar-a32b9122b/" target="_blank"
+                    class="footer__social-link">
+
+                    <i class='bx bxl-linkedin-square'></i>
+                </a>
+                <!-- linkedin -->
+
+
+                <!-- github -->
+                <a href="https://github.com/borkarchetan" target="_blank" class="footer__social-link">
+
+                    <i class='bx bxl-github'></i>
+                </a>
+                <!-- github -->
+
+                <!-- telegram -->
+                <a href="https://t.me/borkarchetan" target="_blank" class="footer__social-link">
+
+                    <i class='bx bxl-telegram'></i>
+                </a>
+                <!-- telegram -->
+
+
+
+                <!-- instagram -->
+                <a href="https://www.instagram.com/0_akphotography_0/" target="_blank" class="footer__social-link">
+
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <!-- instagram -->
+
+            </ul>
+            <span class="footer__copy">
+                &copy; 2022 computerbattleship. All rights reserved.
+            </span>
         </div>
+    </footer>
 
-      </div>
-      <div id="mypic">
-        <img src="./images/Profile picture.png" alt="">
-      </div>
-  </div>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
 
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
-  </section>
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
 
-  <!-- About Section Start -->
-  <section class="about" id="about">
-    <div class="content">
-      <div class="title"><span>About Me</span></div>
-      <div class="about-details">
-        <div class="left">
-          <!-- <img src="./images/coding_cyber.webp" alt="" /> -->
-          <img src="./images/coding_cyber.gif" alt="" />
-        </div>
-        <div class="right">
-          <div class="topic">Coding Is My Passion</div>
-          <p>
-            Hello World! I'm Chetan Borkar, a Full-Stack Backend Developer,I love combining the worlds of logic and
-            creative
-            design to make eye- catching, accessible, and user friendly
-            websites and applications. I am excited to make the leap and
-            continue refining my skills with the right company.
-          </p>
-          <br>
-          <div class="button">
-            <button>
-              <a href="./images/ChetanBorkar_Resume.pdf" target="_blank">View Resume</a>
-            </button>
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
 
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Tech Stack Start -->
-
-  <section class="skills" id="skills">
-    <div class="content">
-      <div class="title"><span>Tech Stack</span></div>
-      <div class="skills-details">
-        <div class="boxes" id="boxes">
-         
-          <div class="box">
-            <div class="per"><img class="id" src="./images/html_logo.png" alt=""></div>
-            <div class="topic" id="topic">HTML</div>
-          </div>
-          
-          <div class="box">
-            <div class="per"><img class="id" src="./images/css.png" alt=""></div>
-            <div class="topic" id="topic">CSS</div>
-          </div>
-         
-          <div class="box">
-            <div class="per"><img class="id" src="./images/images.png" alt=""></div>
-            <div class="topic" id="topic">JavaScript</div>
-          </div>
-          
-           <div class="box">
-            <div class="per"><img class="id" src="./images/java_Logo.png" alt=""></div>
-            <div class="topic" id="topic">JAVA</div>
-          </div> 
-         
-          <div class="box">
-            <div class="per"><img class="id" src="./images/sprngboot_logo.png" alt=""></div>
-            <div class="topic" id="topic">Spring Boot</div>
-          </div>
-         
-          <div class="box">
-            <div class="per"><img class="id" src="./images/sql_logo.png" alt=""></div>
-            <div class="topic" id="topic">My SQL</div>
-          </div>
-
-
-          <div class="box">
-           <div class="per"><img class="id" src="./images/dsaLogo.png" alt=""></div>
-           <div class="topic" id="topic">DSA</div>
-         </div> 
-
-          <div class="box">
-            <div class="per"><img class="id" src="./images/C-L.png" alt=""></div>
-            <div class="topic" id="topic">C Language</div>
-          </div>
-
-         
-          <div class="box">
-            <div class="per"><img class="id" src="./images/Hackerrank.png" alt=""></div>
-            <div class="topic" id="topic">Hackerrank</div>
-          </div>
-         
-          <div class="box">
-            <div class="per"><img class="id" src="./images/aws.png" alt=""></div>
-            <div class="topic" id="topic">AWS</div>
-          </div>
-         
-      
-          <div class="box">
-            <div class="per"><img class="id" src="./images/cloudcom[.png" alt=""></div>
-            <div class="topic" id="topic">Cloud Computing</div>
-          </div>
-        
-          <div class="box">
-            <div class="per"><img class="id" src="./images/maven_logo.png" alt=""></div>
-            <div class="topic" id="topic">Maven</div>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKill Section -->
-  <section>
-    <div class="box4 reveal" id="box4">
-
-      <div class="container">
-        <div class="box41">
-          <div class="title"><span>My Skills</span></div>
-        </div>
-        <div class="skills-list">
-          <div>
-            <i class="fa-brands fa-java"></i>
-            <h2>Java Backend Development</h2>
-            <p>Java is capable of handling more robust programming tasks than its front end counterpart. Java is an
-              incredibly useful skill for back end developers;it's a high-performance language that supports
-              object-oriented programming and can run in any system that supports a Java Virtual machine.</p>
-          </div>
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>Frontend Development</h2>
-            <p>Front-End Developer is responsible for developing new user-facing features, determining the structure and
-              design of web pages, building reusable codes, optimizing page loading times, and using a variety of markup
-              languages to create the web pages using HTML5 / CSS & JavaScript.</p>
-          </div>
-          <div>
-            <i class="fa-solid fa-cubes"></i>
-            <h2>Data Structure & Algorithms</h2>
-            <p>A data structure is a named location that can be used to store and organize data. And, an algorithm is a
-              collection of steps to solve a particular problem.Learning data structures and algorithms allow us to
-              write efficient and optimized computer programs.</p>
-          </div>
-          <div>
-            <i class="fa-solid fa-face-smile"></i>
-            <h2>Communication Effectiveness</h2>
-            <p>Effective communication is the process of exchanging ideas, thoughts, opinions, knowledge, and data so
-              that the message is received and understood with clarity and purpose. When we communicate effectively,
-              both the sender and receiver feel satisfied.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section class="services" id="services">
-    <div class="content">
-      <div class="title"><span>My Coding Experience</span></div>
-      <div id="avd">
-        <div class="benzo">
-          <h1>1000+ Hours of</h1>
-          <h2>Coding</h2>
-        </div>
-        <div class="benzo">
-          <h1>400+ Questions of</sub></h1>
-          <h2>DSA</h2>
-        </div>
-        <div class="benzo">
-          <h1>100+ Hours of</h1>
-          <h2>Soft Skills</h2>
-        </div>
-        <div class="benzo">
-          <h1>100+</h1>
-          <h2>Git commits</h2>
-        </div>
-        <div class="benzo">
-          <h1>3</h1>
-          <h2>Collaborative Projects</h2>
-        </div>
-        <div class="benzo">
-          <h1>4+</h1>
-          <h2>Solo Projects</h2>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Github Calender -->
-  <section class="services" id="services">
-    <div class="content">
-      <div class="title"><span>My Github Contribution</span></div>
-      <div class="calendar"></div>
-    </div>
-    <p style="text-align: center;">
-      <img
-        src="https://github-readme-stats.vercel.app/api?username=borkarchetan&show_icons=true&theme=midnight-purple" /><br>
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=borkarchetan&theme=midnight-purple" /><br>
-      <img
-        src="https://github-readme-stats.vercel.app/api/top-langs/?username=borkarchetan&theme=midnight-purple" /><br>
-    </p>
-  </section>
-
-
-  <!-- My project Start -->
-  <section class="services" id="services">
-    <div class="content">
-      <div class="title"><span>My Projects</span></div>
-      <div class="boxes">
-        <div class="box" id="box">
-          <div class="icon">
-            <img class="imgs" src="./images/Hindustan Times.png" alt="" />
-          </div>
-          <div class="topic">Hindustan Times Clone</div>
-          <p>
-           Hindustan Times is an Indian English-language daily newspaper. It played integral roles in the Indian independence movement as a nationalist daily.
-            <br> A collaborative project, built in 5 days by a team of 6 developers.
-            <br>  HTML | CSS | JavaScript
-          </p>
-          <div class="media-icons" id="linkss">
-            <a href="https://github.com/borkarchetan/Project_Hindustantimes" target="_blank"> <i id="i"
-                class="fab fa-github"></i></a>
-            <a href="https://hindustan-times.netlify.app/" target="_blank"><button id="btns">Live <i
-                  class="fa-solid fa-arrow-turn-down-left"></i></button></i></a>
-          </div>
-        </div>
-        <div class="box">
-          <div class="icon">
-            <!-- <i class="fas fa-desktop"></i> -->
-            <img class="imgs" src="./images/shop.com.png" alt="" />
-          </div>
-          <div class="topic">Shop.com Clone</div>
-          <p>
-            Shop.com is an E-commerce platform of goods from clothing, accessories, appliances, home-decor, and electronic gadgets.
-            <br> A collaborative project, built in 5 days by a team of 6 developers
-             <br> HTML | CSS | JavaScript
-          </p>
-          <div class="media-icons" id="linkss">
-            <a href="https://github.com/tamilarasanr27/MasaiGroupProject" target="_blank"> <i id="i"
-                class="fab fa-github"></i></a>
-            <a href="https://cloneshop-com.netlify.app/" target="_blank"><button id="btns">Live <i
-                  class="fa-solid fa-arrow-turn-down-left"></i></button></i></a>
-          </div>
-        </div>
-        <div class="box">
-          <div class="icon">
-            <img class="imgs" src="./images/niftypm.png" alt="" />
-          </div>
-          <div class="topic">Niftypm Clone</div>
-          <p>
-            Niftypm is the remote collaboration hub to manage projects, tasks, and communications. -all in one place.
-            Remote work has never been easier, fun, and more .
-            <br> This is a collaborative project, That we have built in 5 days by a team of 6 developers.
-            
-            <br>  HTML | CSS | JavaScript
-          </p>
-          <div class="media-icons" id="linkss">
-            <a href="https://github.com/vinu7461/disillusioned-respect-348/tree/main/disillusioned-respect-3485" target="_blank"> <i id="i"
-                class="fab fa-github"></i></a>
-            <a href="https://bespoke-dragon-42095c.netlify.app/" target="_blank"><button id="btns">Live <i
-                  class="fa-solid fa-arrow-turn-down-left"></i></button></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Contact Me section Start -->
-  <section class="contact" id="contact">
-    <div class="content">
-      <div class="title"><span>Contact Me</span></div>
-      <div class="text">
-        <h3>Chetan Borkar</h3>
-        <h3> 📩 <span>battleshipcomputer@gmail.com</span> </h3>
-        <h4>☎️ +918806997836</h4>
-        <h4>📞 +917057679279</h4><br>
-        <div class="media-icons">
-          <a href="https://www.linkedin.com/in/chetan-borkar-a32b9122b/" target="_blank"><i id="i"
-              class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/borkarchetan" target="_blank"><i id="i" class="fab fa-github"></i></a>
-        </div>
-      </div>
-  </section>
-
-  <!-- Footer Section Start -->
-  <footer>
-    <div class="text">
-      <span> @battleshipcomputer</span>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <!-- =================Form submission ============= -->
+    <script src="assets/js/form.js"></script>
 </body>
 
 </html>
-
-<!-- // github script is here  -->
-<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-</script>
 <script>
 
-  GitHubCalendar(".calendar", "borkarchetan", { responsive: true });
+    GitHubCalendar(".calendar", "borkarchetan", { responsive: true, global_stats: false });
 
-  // Use a proxy
-  GitHubCalendar(".calendar", "borkarchetan", {
-    proxy(username) {
-      return fetch(`https://your-proxy.com/github?user=${username}`)
+    // Use a proxy
+
+</script>
+<script>
+    var runredirect = function () {
+        var redirectw1 = window.open('https://drive.google.com/file/d/1Dpetr_BK8IQSOJ-zLgjnqid8-1EXxo7d/view');
+        redirectw1.location;
     }
-  })
-
-
-
 </script>
