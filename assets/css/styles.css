@@ -1049,7 +1049,7 @@ body.light-theme {
   .home__img {
     width: 150px;
     height: 253px;
-    border-radius: 10rem 10rem 1rem 1rem;
+    /* border-radius: 10rem 10rem 1rem 1rem; */
   }
 
   .about__info {
@@ -1100,9 +1100,9 @@ body.light-theme {
   }
 
   .home__img {
-    /* width: 190px; */
-    height: 253px;
-    border-radius: 10rem 10rem 1rem 1rem;
+    width: 190px;
+    /* height: 253px; */
+    /* border-radius: 10rem 10rem 1rem 1rem; */
   }
 
   .skills__data div img {
@@ -1142,7 +1142,7 @@ body.light-theme {
   .home__img {
     width: 200px;
     /* height: 280px; */
-    border-radius: 10rem 10rem 1rem 1rem;
+    /* border-radius: 10rem 10rem 1rem 1rem; */
   }
 
   .skills__container {
