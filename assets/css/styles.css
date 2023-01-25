@@ -335,7 +335,8 @@ body.light-theme {
 }
 
 .home__education {
-  color: var(--text-color);
+  /* color: var(--text-color); */
+  color: #e6990b;
   margin-bottom: 2.5rem;
 }
 
