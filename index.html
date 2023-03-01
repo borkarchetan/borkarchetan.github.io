@@ -35,32 +35,33 @@
             <div class="nav__menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
+                        <a href="#home" title="Home" class="nav__link active-link">
                             <i class='bx bx-home-alt'></i>
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">
+                        <a href="#about" title="About"
+                        class="nav__link">
                             <i class='bx bx-user'></i>
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#skills" class="nav__link">
+                        <a href="#skills" title="Skills" class="nav__link">
                             <i class='bx bx-book'></i>
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#work" class="nav__link">
+                        <a href="#work" title="Project" class="nav__link">
                             <i class='bx bxs-briefcase-alt-2'></i>
                         </a>
                     </li>
-                    <li class="nav__item">
+                    <li class="nav__item" title="Contact">
                         <a href="#contact" class="nav__link">
                             <i class='bx bx-message-detail'></i>
                         </a>
                     </li>
 
-                    <li class="nav__item" onclick="runredirect()"">
+                    <li class="nav__item" title="Resume" onclick="runredirect()"">
                         <a href=" ./assets/img/Chetan Borkar.pdf" download target="_blank" class="nav__link">
                         <i class='bx bx-cloud-download'></i>
                         </a>
@@ -104,19 +105,19 @@
                 </div>
                 <div class="home__social">
                     <!-- telegram -->
-                    <a href="https://t.me/borkarchetan" class="home__social-link" target="_blank">
+                    <a href="https://t.me/borkarchetan" title="Telegram" class="home__social-link" target="_blank">
                         <i class='bx bxl-telegram'></i>
                     </a>
                     <!-- telegram -->
 
                     <!-- whatsapp -->
-                    <a href="https://wa.me/+918806997836" class="home__social-link" target="_blank">
+                    <a href="https://wa.me/+918806997836" title="WhatsApp" class="home__social-link" target="_blank">
                         <i class='bx bxl-whatsapp'></i>
                     </a>
                     <!-- whatsapp -->
 
                     <!-- linkedin -->
-                    <a href="https://www.linkedin.com/in/chetan-borkar-a32b9122b/" class="home__social-link"
+                    <a href="https://www.linkedin.com/in/chetan-borkar-a32b9122b/" class="home__social-link" title="LinkedIn"
                         target="_blank">
                         <i class='bx bxl-linkedin-square'></i>
                     </a>
@@ -124,14 +125,14 @@
 
 
                     <!-- instagram -->
-                    <a href="https://www.instagram.com/0_akphotography_0/" class="home__social-link" target="_blank">
+                    <a href="https://www.instagram.com/0_akphotography_0/" class="home__social-link" title="Instagram" target="_blank">
                         <i class='bx bxl-instagram'></i>
                     </a>
 
                     <!-- instagram -->
 
                     <!-- github -->
-                    <a href="https://github.com/borkarchetan" class="home__social-link" target="_blank">
+                    <a href="https://github.com/borkarchetan" class="home__social-link" title="GitHub" target="_blank">
                         <i class='bx bxl-github'></i>
                     </a>
                     <!-- github -->
@@ -257,6 +258,77 @@
                         </div>
                     </div>
                 </div>
+
+
+                <!-- tools here  -->
+
+                <div class="skills__content">
+                    <h3 class="skills__title">Technical Tools
+                    </h3>
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <!-- <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">STS</h3>
+                                    <img src="./assets/img/java.png" />
+                                </div>
+                            </div> -->
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">VS Code</h3>
+                                    <img src="./assets/img/vs-code.svg" />
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Swagger</h3>
+                                    <img src="./assets/img/swagger.svg" />
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">IntelliJ</h3>
+                                    <img src="./assets/img/intellij.svg" />
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">GitHub</h3>
+                                    <img src="./assets/img/github.svg" />
+                                </div>
+                            </div>
+
+                            <!-- <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Maven</h3>
+                                    <img src="./assets/img/maven.jpg" />
+                                </div>
+                            </div> -->
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- tools here  -->
+
+
+
+
+
+                
                 <div class="skills__content">
                     <h3 class="skills__title">Frontend Development</h3>
                     <div class="skills__box">
@@ -289,6 +361,9 @@
                         </div>
                     </div>
                 </div>
+
+
+
                 <div class="skills__content">
                     <h3 class="skills__title">Soft Skills
                     </h3>
@@ -356,23 +431,26 @@
                     <img src="./assets/img/Game.png" alt="" class="work__img">
                     <h3 class="work__title">Dice Game</h3>
 
-                    <p>It is the Dice Game. </p>
-                    <p>and it is the completely responsive</p>
+                    <!-- <p>It is the Dice Game. and it  is</p>
+                    <p> the completely responsive</p>
                     <p>for all the device.</p>
                     <p>it mainly use HTML, CSS and JavaScript</p>
                     <p>The Dice Game is the small project Which</p>
                     <p>i made individually.</p>
-                    <p>within 2 Days.</p>
+                    <p>within 2 Days.</p> -->
+
+                    <p>It is the Dice Game and it is the <br> completely responsive for all the <br> device. it mainly use HTML, CSS <br> and JavaScript The Dice Game <br> is the small project Which i <br> made individually. within 2 Days. </p>
+
 
                     <p class="bold"> TECH STACKS :</p>
 
                     <img src="https://tse1.mm.bing.net/th?id=OIP.pqcPskVdTrJqfhZ-Z49AtQHaHn&pid=Api&rs=1&c=1&qlt=95&w=106&h=109"
-                        alt="" class="logos" />
-                    <img src="https://tse4.mm.bing.net/th?id=OIP.7Af7fIq_qBZlQKTogILDlgHaG6&pid=Api&P=0" alt=""
+                        alt="" title="HTML" class="logos" />
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.7Af7fIq_qBZlQKTogILDlgHaG6&pid=Api&P=0" alt="" title="CSS"
                         class="logos" />
-                    <img src="https://tse2.mm.bing.net/th?id=OIP.vF8_h2mXqrGRynymmcJ4zgHaHJ&pid=Api&P=0" alt=""
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.vF8_h2mXqrGRynymmcJ4zgHaHJ&pid=Api&P=0" alt="" title="JavaScript"
                         class="logos" />
-                    <img src="https://tse3.mm.bing.net/th?id=OIP.vz7_8tUPWjssC87owmj88gHaHa&pid=Api&P=0" alt=""
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.vz7_8tUPWjssC87owmj88gHaHa&pid=Api&P=0" alt="" title="Netlify"
                         class="logos" />
                     <a href="https://dicegamewithborkarchetan.netlify.app/" target="_blank" class="work__button">
                         Live <i class='bx bx-right-arrow-alt work__icon'></i>
@@ -382,11 +460,11 @@
                 </div>
 
 
-                <div class="work__card mix projects">
+                <!-- <div class="work__card mix projects">
                     <img src="./assets/img/Hindustan Times.png" alt="" class="work__img">
                     <h3 class="work__title">Website - Hindustan Times</h3>
 
-                    <p>Hindustan Times is an Indian </p>
+                    <!-- <p>Hindustan Times is an Indian </p>
                     <p>English-language daily newspaper.</p>
                     <p>It played integral roles in the</p>
                     <p>Indian independence movement as a</p>
@@ -394,22 +472,24 @@
                     <p>A collaborative project, built in 5 days,</p>
                     <p>by a team of 6 developers.</p>
 
+
+                    <p>Hindustan Times is an Indian <br> English-language daily newspaper. <br> It played integral roles in the Indian <br> independence movement as a <br> nationalist daily. A collaborative <br> project, built in 5 days, by a team <br> of 6 developers. </p>
                     <p class="bold"> TECH STACKS :</p>
 
                     <img src="https://tse1.mm.bing.net/th?id=OIP.pqcPskVdTrJqfhZ-Z49AtQHaHn&pid=Api&rs=1&c=1&qlt=95&w=106&h=109"
-                        alt="" class="logos" />
-                    <img src="https://tse4.mm.bing.net/th?id=OIP.7Af7fIq_qBZlQKTogILDlgHaG6&pid=Api&P=0" alt=""
+                        alt="" title="HTML" class="logos" />
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.7Af7fIq_qBZlQKTogILDlgHaG6&pid=Api&P=0" alt="" title="CSS"
                         class="logos" />
-                    <img src="https://tse2.mm.bing.net/th?id=OIP.vF8_h2mXqrGRynymmcJ4zgHaHJ&pid=Api&P=0" alt=""
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.vF8_h2mXqrGRynymmcJ4zgHaHJ&pid=Api&P=0" alt="" title="JavaScript"
                         class="logos" />
-                    <img src="https://tse3.mm.bing.net/th?id=OIP.vz7_8tUPWjssC87owmj88gHaHa&pid=Api&P=0" alt=""
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.vz7_8tUPWjssC87owmj88gHaHa&pid=Api&P=0" alt="" title="Netlify"
                         class="logos" />
                     <a href="https://hindustan-times.netlify.app/" target="_blank" class="work__button">
                         Live <i class='bx bx-right-arrow-alt work__icon'></i>
                         <a href="https://github.com/borkarchetan/Project_Hindustantimes" target="_blank"
                             class="button code">Code</a>
                     </a>
-                </div>
+                </div>  -->
 
                 <div class="work__card mix projects">
                     <img src="./assets/img/shop.com.png" alt="" class="work__img">
@@ -417,23 +497,25 @@
 
 
 
-                    <p>Shop.comis an E-commerce</p>
+                    <!-- <p>Shop.comis an E-commerce</p>
                     <p> platform of goods from </p>
                     <p> clothing, accessories,</p>
                     <p>appliances, home-decor, and electronic </p>
                     <p>gadgets.</p>
                     <p>A collaborative project, built in 5 days,</p>
-                    <p>by a team of 6 developers.</p>
+                    <p>by a team of 6 developers.</p> -->
+
+                    <p>Shop.comis an E-commerce <br> platform of goods from clothing, <br> accessories,appliances, home- <br>decor, and electronic gadgets. <br> A collaborative project, built in <br> 5 days, by a team of 6 developers. </p>
 
                     <p class="bold"> TECH STACKS :</p>
 
                     <img src="https://tse1.mm.bing.net/th?id=OIP.pqcPskVdTrJqfhZ-Z49AtQHaHn&pid=Api&rs=1&c=1&qlt=95&w=106&h=109"
-                        alt="" class="logos" />
-                    <img src="https://tse4.mm.bing.net/th?id=OIP.7Af7fIq_qBZlQKTogILDlgHaG6&pid=Api&P=0" alt=""
+                        alt="" title="HTML" class="logos" />
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.7Af7fIq_qBZlQKTogILDlgHaG6&pid=Api&P=0" alt="" title="CSS"
                         class="logos" />
-                    <img src="https://tse2.mm.bing.net/th?id=OIP.vF8_h2mXqrGRynymmcJ4zgHaHJ&pid=Api&P=0" alt=""
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.vF8_h2mXqrGRynymmcJ4zgHaHJ&pid=Api&P=0" alt="" title="JavaScript"
                         class="logos" />
-                    <img src="https://tse3.mm.bing.net/th?id=OIP.vz7_8tUPWjssC87owmj88gHaHa&pid=Api&P=0" alt=""
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.vz7_8tUPWjssC87owmj88gHaHa&pid=Api&P=0" alt="" title="Netlify"
                         class="logos" />
 
                     <a href="https://cloneshop-com.netlify.app/" target="_blank" class="work__button">
@@ -446,23 +528,25 @@
                     <img src="./assets/img/niftypm.png" alt="" class="work__img">
                     <h3 class="work__title">Website - niftypm</h3>
 
-                    <p>Niftypm is the remote collaboration</p>
+                    <!-- <p>Niftypm is the remote collaboration</p>
                     <p>hub to manage projects, tasks, and</p>
                     <p>communications. -all in one place.</p>
                     <p>Remote work has never been easier,</p>
                     <p>fun, and more .</p>
                     <p>A collaborative project, built in 5 days,</p>
-                    <p>by a team of 6 developers.</p>
+                    <p>by a team of 6 developers.</p> -->
+
+                    <p>Niftypm is the remote collaboration <br> hub to manage projects, tasks, and <br> communications. -all in one place. <br> Remote work has never been easier, <br> fun, and more . collaborative project, <br> built in 5 days, team of 6 developers.</p>
 
                     <p class="bold"> TECH STACKS :</p>
 
                     <img src="https://tse1.mm.bing.net/th?id=OIP.pqcPskVdTrJqfhZ-Z49AtQHaHn&pid=Api&rs=1&c=1&qlt=95&w=106&h=109"
-                        alt="" class="logos" />
-                    <img src="https://tse4.mm.bing.net/th?id=OIP.7Af7fIq_qBZlQKTogILDlgHaG6&pid=Api&P=0" alt=""
+                        alt="" title="HTML" class="logos" />
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.7Af7fIq_qBZlQKTogILDlgHaG6&pid=Api&P=0" alt="" title="CSS"
                         class="logos" />
-                    <img src="https://tse2.mm.bing.net/th?id=OIP.vF8_h2mXqrGRynymmcJ4zgHaHJ&pid=Api&P=0" alt=""
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.vF8_h2mXqrGRynymmcJ4zgHaHJ&pid=Api&P=0" alt="" title="JavaScript"
                         class="logos" />
-                    <img src="https://tse3.mm.bing.net/th?id=OIP.vz7_8tUPWjssC87owmj88gHaHa&pid=Api&P=0" alt=""
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.vz7_8tUPWjssC87owmj88gHaHa&pid=Api&P=0" alt="" title="Netlify"
                         class="logos" />
 
                     <a href="https://bespoke-dragon-42095c.netlify.app/" target="_blank" class="work__button">
@@ -471,6 +555,44 @@
                             target="_blank" class="button code">Code</a>
                     </a>
                 </div>
+
+
+                <!-- java project -->
+                
+                <div class="work__card mix projects">
+                    <img src="./assets/img/ShopeZLY.png" alt="" class="work__img">
+                    <h3 class="work__title">Website - SHOPEZLY</h3>
+
+                    <!-- <p>ShopeZLY is the E-Commerce Website</p>
+                    <p>hub to manage projects, tasks, and</p>
+                    <p>communications. -all in one place.</p>
+                    <p>Remote work has never been easier,</p>
+                    <p>fun, and more .</p>
+                    <p>A collaborative project, built in 5 days,</p>
+                    <p>by a team of 6 developers.</p> -->
+
+
+                    <p>ShopeZLY is the E-Commerce Website <br>hub to manage projects, tasks, and <br>communications. -all in one place. <br> Remote work has never been  easier, <br> fun, and more . collaborative project, <br> built in 5 days, by a team of 6 developers. </p>
+
+                    <p class="bold"> TECH STACKS :</p>
+
+                    <img src="https://th.bing.com/th/id/OIP.VZYJGn2VK2FBE0t2tLvvrwHaHa?w=180&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" title="JAVA"
+                        alt="" class="logos" />
+                    <img src="https://www.bing.com/th?id=OIP.tv49Gr7dCItRCOGu41_pUAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="" title="MY-SQL"
+                        class="logos" />
+                    <img src="https://th.bing.com/th/id/OIP.s3twEa94SdRplbZY7lUWsgHaHa?w=181&h=181&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="" title="SpringBoot"
+                        class="logos" />
+                    <img src="https://th.bing.com/th/id/OIP.YCdY8pRfjdOIUcBvccLpCgHaHa?w=180&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="" title="Hibernet"
+                        class="logos" />
+
+                    <a href="https://drive.google.com/file/d/1ahALoNcITrL8qgGqiTsiSKo_nXjgsCYB/view?usp=share_link" target="_blank" class="work__button">
+                        Live <i class='bx bx-right-arrow-alt work__icon'></i>
+                        <a href="https://github.com/randomFrisby/homely-yarn-5441/"
+                            target="_blank" class="button code">Code</a>
+                    </a>
+                </div>
+
+
 
             </div>
         </section>
@@ -590,46 +712,47 @@
             <ul class="footer__social">
 
                 <!-- whatsapp -->
-                <a href="https://wa.me/+918806997836" target="_blank" class="footer__social-link">
-                    <i class='bx bxl-whatsapp'></i>
+                <a href="https://wa.me/+918806997836" title="WhatsApp" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-whatsapp'></i> 
                 </a>
                 <!-- whatsapp -->
 
 
                 <!-- linkedin -->
                 <a href="https://www.linkedin.com/in/chetan-borkar-a32b9122b/" target="_blank"
-                    class="footer__social-link">
+                title="LinkedIn" class="footer__social-link">
 
-                    <i class='bx bxl-linkedin-square'></i>
+                    <i class='bx bxl-linkedin-square'></i> 
                 </a>
                 <!-- linkedin -->
 
 
                 <!-- github -->
-                <a href="https://github.com/borkarchetan" target="_blank" class="footer__social-link">
+                <a href="https://github.com/borkarchetan" title="GitHub" target="_blank" class="footer__social-link">
 
-                    <i class='bx bxl-github'></i>
+                    <i class='bx bxl-github'></i> 
                 </a>
                 <!-- github -->
 
                 <!-- telegram -->
-                <a href="https://t.me/borkarchetan" target="_blank" class="footer__social-link">
+                <a href="https://t.me/borkarchetan" target="_blank" title="Telegram" class="footer__social-link">
 
-                    <i class='bx bxl-telegram'></i>
+                    <i class='bx bxl-telegram'></i> 
                 </a>
                 <!-- telegram -->
 
 
 
                 <!-- instagram -->
-                <a href="https://www.instagram.com/0_akphotography_0/" target="_blank" class="footer__social-link">
+                <a href="https://www.instagram.com/0_akphotography_0/" target="_blank" title="Instagram" class="footer__social-link">
 
-                    <i class='bx bxl-instagram'></i>
+                    <i class='bx bxl-instagram'></i> 
                 </a>
                 <!-- instagram -->
 
             </ul>
             <span class="footer__copy">
+                 Contact &blacktriangleright; +91 7057679279 <br>
                 &cirmid; Nagpur - Maharashtra, <br> &copy; 2022 computerbattleship, <br>
                 &longrightarrow; All Rights Reserved.
             </span>
