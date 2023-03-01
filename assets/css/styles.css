@@ -445,6 +445,7 @@ body.light-theme {
 .button:hover {
   background-color: var(--first-color-alt);
   color: var(--body-color);
+  
 }
 
 .button--ghost {
@@ -756,6 +757,8 @@ body.light-theme {
   color: var(--first-color);
   transition: .4s;
 }
+
+
 
 .code {
   margin-top: -40px;
@@ -1331,7 +1334,7 @@ body.light-theme {
 
   .about__description {
     padding: 0;
-    text-align: center;
+    text-align:justify;
     font-size: 1.25rem;
     margin-bottom: 2.5rem;
   }
